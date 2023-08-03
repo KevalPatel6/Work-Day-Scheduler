@@ -1,20 +1,12 @@
-Things I did 
-    Set html elements for rest of work hours
-        Set the ID's using military time so there is no confusions
-    1. Set the current day at the top and the day
-        Use dayjs()    
-    2.CSS needs to change based on past, present, future
-        a. Determine current time --------
-            >Use dayjs to find out and store it or just get it on initial page load maybe
+
     
     
 
 Doing/Things to Do
-        b. compare the hours to the time block hour and if it is equal it is present ----------if statement-------------
-            i. if  it is equal it is present
-            ii. if it is less than it is past
-            iii. if it is greater than than it is future
     3. Save button function
-        a. Save the text for the input into local storage along with the time 
+        a. Figure out how to determine which button was pushed first
+        b. determine the id fo the text area
+        c. Save the text for the input into local storage along with the time 
+        
 
 Did I commit? No

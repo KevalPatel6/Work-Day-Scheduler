@@ -1,6 +1,7 @@
 //---------------Global variables--------------------------------------------------------//
 let currentDay = document.querySelector("#currentDay");
 let currentDate = document.querySelector("#currentDate")
+
 //----------------------------------------------------------------------------------------//
 
 //-----------Step 1 Set the date at the top of the page-------------------------------//
@@ -19,7 +20,7 @@ currentDate.textContent = dayjs().format("dddd");
 // current hour in 24-hour time?
 
 //.........................Current hour in military time.............//
-let currentHour = 14;
+let currentHour = dayjs().hour();
 ///---------------------------------------------------------------///
 //----------Set variable = all time blocks and so it is an array---//
 let hourBlocks = document.querySelectorAll('.time-block')
@@ -41,6 +42,53 @@ for (let i = 0; i < hourBlocks.length; i++){
   }
     
 }
+
+//-----------------------------------------------------------------------
+
+//-------------Event Listener for Save Button............................//
+
+
+let saveButton = document.querySelector('.time-block-container');
+let allButtonsArr = document.querySelectorAll('.btn');
+
+saveButton.addEventListener('click', function(event){
+  
+  
+  if (event.target.matches("button")){
+    let eventText = event.target.previousElementSibling.value
+    let timeBlock = event.target.dataset.time
+    // let calendarEvents = localStorage.getItem() || null;<<NEEDED else where
+  console.log(event.target.dataset.time)
+  localStorage.setItem(timeBlock, eventText)
+  
+ }
+})
+//Get the saved item to show up on the page now//
+///---------------attempt 1-------------//
+// function pageLoad(){
+//   let allTextArea = document.querySelectorAll('textarea')
+// for (let i = 0; i < allTextArea.length; i++) {
+//       if(allTextArea[i].dataset.time===localStorage.key(allTextArea[i])){
+//         allTextArea[i].value = localStorage.getItem(i)
+//       }
+
+
+// }}
+//---------------attempt 2------------//
+//On page load//
+  for (let i = 0; i < allTextArea.length; i++) {
+    let allTextArea = document.querySelectorAll('textarea')
+    if (allTextArea[i].dataset.time===localStorage.key(i+9)){
+        allTextArea[i].value = localStorage.getItem(i+9)
+      
+    }
+
+    
+    
+  }
+
+
+
 
 
 
