@@ -26,7 +26,7 @@ As an example of the above color coordination, you can see the screen shot below
 Credit to my tutor Joem Casusi for helping me with the local storage issue I was having.
 
 
-# License
+## License
 MIT License
 
 Copyright (c) [2023] [Keval Patel]
