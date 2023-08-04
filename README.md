@@ -5,7 +5,7 @@
 This repository is for a simple calendar application that allows users to save events during a typical work day in hourly blocks. The application was created in order to provide users the ability to create a calendar for their work day and save those items so that the next time they load the page the events will appear in the time slots in which they were saved. As a software developer, from creating this application, I was able to test my fundamentals of JavaScript and learn to use DOM APIs to manipulate HTML elements. I was also able to showcase my understanding of localStorage and how it can be used to save information and load it on the page when needed.
 
 # Usage
-In order to use this application, first, you will need to go to the application landing page which can be found here, <placeholder>. On the landing page you can see the current date and the day of the week. If you scroll down you can see the hours of a typical work day (9am-5pm). 
+In order to use this application, first, you will need to go to the application landing page which can be found here, https://kevalpatel6.github.io/Work-Day-Scheduler/. On the landing page you can see the current date and the day of the week. If you scroll down you can see the hours of a typical work day (9am-5pm). 
 
 As a user, you will be able to click on the time slot text area and type in anything that you want. Typically, a user will fill out an event or a to-do item in this text area. After typing in an event or to-do item, you will need to hit the save button with a save icon on the right hand side of the text area in order for the event to be saved. 
 
@@ -26,7 +26,7 @@ As an example of the above color coordination, you can see the screen shot below
 Credit to my tutor Joem Casusi for helping me with the local storage issue I was having.
 
 
-License
+# License
 MIT License
 
 Copyright (c) [2023] [Keval Patel]
